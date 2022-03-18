@@ -1,8 +1,10 @@
-<div *ngIf="messageService.messages.length">
+<div class="message" *ngIf="messageService.messages.length">
 
     <h2>Messages</h2>
     <button type="button" class="clear"
             (click)="messageService.clear()">Clear messages</button>
+    <!-- avec Seulement l'instanciation de classe seviceMesage dans le constructeur
+    on peut y acceder au attribut(dans se cas la liste des messages) de cette classe  -->
     <div *ngFor='let message of messageService.messages'> {{message}} </div>
   
   </div>
