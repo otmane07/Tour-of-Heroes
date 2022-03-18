@@ -21,10 +21,10 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
     //Leur de la selection d'un li selectedHero et la méthode add est appele
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
+  // }
 
 
   getHeroes(): void {
