@@ -1,7 +1,9 @@
-<h1 class="main__title">{{title}}</h1>
-<nav>
-    <a routerLink="/dashboard">Dashboard</a>
-    <a routerLink="/heroes">Heroes</a>
-  </nav>
+<div class="contenu">
+  <h1 class="main__title">{{title}}</h1>
+<ul class="tab-menu">
+  <li routerLinkActive="active"><a routerLink="/dashboard">Dashboard</a></li>
+  <li routerLinkActive="active"><a routerLink="/heroes">Heroes</a></li>
+</ul>
+</div>
 <router-outlet></router-outlet>
 <app-messages></app-messages>
